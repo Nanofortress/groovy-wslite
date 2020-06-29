@@ -15,10 +15,8 @@
 package wslite.soap
 
 
-@NonCPS
 class SOAPFaultException extends SOAPClientException {
 
-    @Delegate
     SOAPResponse soapResponse
 
     SOAPFaultException(SOAPResponse response) {
