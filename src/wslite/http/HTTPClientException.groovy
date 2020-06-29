@@ -14,7 +14,8 @@
  */
 package wslite.http;
 
-public class HTTPClientException extends GroovyRuntimeException {
+@NonCPS
+public class HTTPClientException extends RuntimeException {
 
     private HTTPRequest request;
     private HTTPResponse response;
