@@ -14,6 +14,8 @@
  */
 package wslite.soap
 
+
+@NonCPS
 class SOAPFaultException extends SOAPClientException {
 
     @Delegate
