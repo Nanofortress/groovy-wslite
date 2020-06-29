@@ -14,21 +14,21 @@
  */
 package wslite.http;
 
-public class HTTPClientException extends RuntimeException {
+public class HTTPClientException extends GroovyRuntimeException {
 
     private HTTPRequest request;
     private HTTPResponse response;
 
     public HTTPClientException() { }
-    
+
     public HTTPClientException(String message) {
         super(message);
-    } 
-    
+    }
+
     public HTTPClientException(String message, Throwable cause) {
         super(message, cause);
     }
-    
+
     public HTTPClientException(Throwable cause) {
         super(cause);
     }
@@ -44,11 +44,11 @@ public class HTTPClientException extends RuntimeException {
         this.request = httpRequest;
         this.response = httpResponse;
     }
-    
+
     public HTTPRequest getRequest() {
         return request;
     }
-    
+
     public HTTPResponse getResponse() {
         return response;
     }
